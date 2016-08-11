@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>New project</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.mycompany.myapp</app-id>
+    <unique-id>2737z5163mwg7</unique-id>
+    <saved-with-version>23300</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
+        <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
+        <behavior author="Scirra" id="destroy" version="1">Destroy outside layout</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>854</width>
+        <height>480</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Construct 2 splash</prop>
+        <prop name="Orientations">Any</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="Keyboard" sid="676034190190194">
+            <plugin id="Keyboard" />
+        </object-type>
+        <object-type name="Mouse" sid="782450765248196">
+            <plugin id="Mouse" />
+        </object-type>
+        <object-type name="Sprite" sid="415725956369442">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="BoundToLayout" sid="380486038741539">
+                    <behavior id="bound" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="844802148411431" speed="5">
+                    <frame duration="1" hotspotX="0.129485" hotspotY="0.236842" original-source="C:\Users\ajbim\Downloads\shark-30367_640.png">
+                        <collision-poly>
+                            <point x="0.160686" y="0.142857" />
+                            <point x="0.461778" y="0.00751875" />
+                            <point x="0.493759" y="0.261278" />
+                            <point x="0.818643" y="0.446428" />
+                            <point x="0.982839" y="0.146616" />
+                            <point x="0.941888" y="0.751879" />
+                            <point x="0.808893" y="0.526316" />
+                            <point x="0.594384" y="0.714286" />
+                            <point x="0.367785" y="0.671053" />
+                            <point x="0.368955" y="0.99624" />
+                            <point x="0.307332" y="0.868421" />
+                            <point x="0.269891" y="0.635338" />
+                            <point x="0.0764431" y="0.567669" />
+                            <point x="0" y="0.424812" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="SnakeHead" sid="488146084524307">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="232727994139934" speed="5">
+                    <frame duration="1" hotspotX="0.00552486" hotspotY="0.584507" original-source="C:\Users\ajbim\Downloads\snake-46140_640.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Snakebody" sid="296662685235787">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="9" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="351721014670745" speed="5">
+                    <frame duration="1" hotspotX="0.027439" hotspotY="0.206107" original-source="C:\Users\ajbim\Desktop\Gamemaking\Snake Anim\1.png" />
+                    <frame duration="1" hotspotX="0.027972" hotspotY="0.348624" original-source="C:\Users\ajbim\Desktop\Gamemaking\Snake Anim\2.png" />
+                    <frame duration="1" hotspotX="0.0289855" hotspotY="0.458333" original-source="C:\Users\ajbim\Desktop\Gamemaking\Snake Anim\3.png" />
+                    <frame duration="1" hotspotX="0.0244755" hotspotY="0.633027" original-source="C:\Users\ajbim\Desktop\Gamemaking\Snake Anim\4.png" />
+                    <frame duration="1" hotspotX="0.027439" hotspotY="0.801527" original-source="C:\Users\ajbim\Desktop\Gamemaking\Snake Anim\5.png" />
+                    <frame duration="1" hotspotX="0.0454545" hotspotY="0.651376" />
+                    <frame duration="1" hotspotX="0.0289855" hotspotY="0.513889" />
+                    <frame duration="1" hotspotX="0.0314685" hotspotY="0.348624" />
+                    <frame duration="1" hotspotX="0.0243902" hotspotY="0.175573" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="LAzer" sid="939671042945314">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="DestroyOutsideLayout" sid="912683752674530">
+                    <behavior id="destroy" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="774414754884259" speed="5">
+                    <frame duration="1" hotspotX="0.992701" hotspotY="0.538462" original-source="C:\Users\ajbim\OneDrive\Documents\GitHub\Epic-Battles\Animations\Laser\Default\000.png">
+                        <collision-poly>
+                            <point x="0.00729927" y="1" />
+                            <point x="0.00729927" y="0.361538" />
+                            <point x="0.992701" y="0" />
+                            <point x="0.992701" y="0" />
+                            <point x="0.992701" y="0.361538" />
+                            <point x="0.992701" y="0.846154" />
+                            <point x="0.992701" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite2" sid="943171016440024">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="760528243879044">
+                    <behavior id="Bullet" />
+                </behavior-type>
+                <behavior-type name="DestroyOutsideLayout" sid="588335482091752">
+                    <behavior id="destroy" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="610836607383078" speed="5">
+                    <frame duration="1" hotspotX="0.527397" hotspotY="0.0232558" original-source="C:\Users\ajbim\OneDrive\Documents\GitHub\Epic-Battles\Animations\Laser\Default\000.png">
+                        <collision-poly>
+                            <point x="0.10274" y="0.0116279" />
+                            <point x="0.294521" y="0.0116279" />
+                            <point x="0.726027" y="0.0116279" />
+                            <point x="1" y="0.0116279" />
+                            <point x="1" y="0.0116279" />
+                            <point x="0.726027" y="0.976744" />
+                            <point x="0.10274" y="0.674419" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>Layout 1.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Event sheet 1.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Keyboard" uid="0" />
+        <global-instance type="Mouse" uid="1" />
+    </global-instances>
+    <sounds-folder />
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>

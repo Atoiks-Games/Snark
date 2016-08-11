@@ -1,0 +1,224 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 1</name>
+    <events>
+        <variable constant="0" name="Score" sid="316417501885256" static="0" type="number">0</variable>
+        <variable constant="0" name="Difficulty" sid="575757480673136" static="0" type="number">10</variable>
+        <event-block sid="435141016102089">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="765113694515078" type="System" />
+            </conditions>
+            <actions>
+                <action id="3" name="Start" sid="843510436773022" type="Snakebody">
+                    <param id="0" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="926464959211036">
+            <conditions>
+                <condition id="4" name="On finished" sid="634098797071959" type="Snakebody">
+                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="3" name="Start" sid="209953211932905" type="Snakebody">
+                    <param id="0" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="476827177208403">
+            <conditions>
+                <condition id="2" name="Key is down" sid="457305624603637" type="Keyboard">
+                    <param id="0" name="Key">68 (D)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-23" name="Move at angle" sid="139897319571779" type="Sprite">
+                    <param id="0" name="Angle">0</param>
+                    <param id="1" name="Distance">1</param>
+                </action>
+                <action id="-23" name="Move at angle" sid="685869281900447" type="LAzer">
+                    <param id="0" name="Angle">0</param>
+                    <param id="1" name="Distance">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="326643034554490">
+            <conditions>
+                <condition id="2" name="Key is down" sid="507592797860798" type="Keyboard">
+                    <param id="0" name="Key">87 (W)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-23" name="Move at angle" sid="726919919461600" type="Sprite">
+                    <param id="0" name="Angle">270</param>
+                    <param id="1" name="Distance">1</param>
+                </action>
+                <action id="-23" name="Move at angle" sid="885112308431708" type="LAzer">
+                    <param id="0" name="Angle">270</param>
+                    <param id="1" name="Distance">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="294023999334789">
+            <conditions>
+                <condition id="2" name="Key is down" sid="507923859882208" type="Keyboard">
+                    <param id="0" name="Key">65 (A)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-23" name="Move at angle" sid="143530869032198" type="Sprite">
+                    <param id="0" name="Angle">180</param>
+                    <param id="1" name="Distance">1</param>
+                </action>
+                <action id="-23" name="Move at angle" sid="914149623833719" type="LAzer">
+                    <param id="0" name="Angle">180</param>
+                    <param id="1" name="Distance">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="107812950092135">
+            <conditions>
+                <condition id="2" name="Key is down" sid="109205796711857" type="Keyboard">
+                    <param id="0" name="Key">83 (S)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-23" name="Move at angle" sid="147873716263155" type="Sprite">
+                    <param id="0" name="Angle">90</param>
+                    <param id="1" name="Distance">1</param>
+                </action>
+                <action id="-23" name="Move at angle" sid="425119723887641" type="LAzer">
+                    <param id="0" name="Angle">90</param>
+                    <param id="1" name="Distance">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="208484766453407">
+            <conditions>
+                <condition id="2" name="Mouse button is down" sid="720204284377901" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-22" name="Set angle toward position" sid="731199110946534" type="Sprite">
+                    <param id="0" name="X">Mouse.X</param>
+                    <param id="1" name="Y">Mouse.Y</param>
+                </action>
+                <action id="-22" name="Set angle toward position" sid="387777276651156" type="LAzer">
+                    <param id="0" name="X">Mouse.X</param>
+                    <param id="1" name="Y">Mouse.Y</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="453397099122671">
+            <conditions>
+                <condition id="0" name="On click" sid="114190978788295" type="Mouse">
+                    <param id="0" name="Mouse button">2</param>
+                    <param id="1" name="Click type">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="149989151716516" type="Sprite">
+                    <param id="0" name="Object">LAzer</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="224994384001069">
+            <conditions>
+                <condition id="3" name="On button released" sid="419560812460407" type="Mouse">
+                    <param id="0" name="Mouse button">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="282786180171239" type="LAzer" />
+            </actions>
+        </event-block>
+        <event-block sid="393335874123082">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="185665521460576" type="System">
+                    <param id="0" name="Interval (seconds)">1.5</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="848576077586393" type="System">
+                    <param id="0" name="Variable">Difficulty</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Value">0.1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Subtract from" sid="181127743854050" type="System">
+                    <param id="0" name="Variable">Difficulty</param>
+                    <param id="1" name="Value">0.1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="715388457843485">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="331851503333636" type="System">
+                    <param id="0" name="Interval (seconds)">Difficulty</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="474593943050240" type="SnakeHead">
+                    <param id="0" name="Object">Sprite2</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="108804931893022">
+            <conditions>
+                <condition id="-18" name="On created" sid="268776388330636" type="Sprite2" />
+            </conditions>
+            <actions>
+                <action id="-22" name="Set angle toward position" sid="665290217608683" type="Sprite2">
+                    <param id="0" name="X">Sprite.X</param>
+                    <param id="1" name="Y">Sprite.Y</param>
+                </action>
+                <action behavior="Bullet" id="0" name="Set speed" sid="104735742784483" type="Sprite2">
+                    <param id="0" name="Speed">11 - Difficulty</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="623003177782645">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="424544096101392" type="LAzer">
+                    <param id="0" name="Object">Sprite2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Set opacity" sid="788677473416788" type="Sprite2">
+                    <param id="0" name="Opacity">Self.Opacity-10</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="608929062427837">
+            <conditions>
+                <condition id="-10" name="Compare opacity" sid="808211511254654" type="Sprite2">
+                    <param id="0" name="Comparison">3</param>
+                    <param id="1" name="Opacity">10</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="682828624695937" type="Sprite2" />
+                <action id="-10" name="Add to" sid="733730016586789" type="System">
+                    <param id="0" name="Variable">Score</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="283499487545477">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="968618638392360" type="Sprite2">
+                    <param id="0" name="Object">Sprite</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="896031749912435" type="Sprite" />
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

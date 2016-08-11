@@ -13,6 +13,7 @@
                 <action id="3" name="Start" sid="843510436773022" type="Snakebody">
                     <param id="0" name="From">1</param>
                 </action>
+                <action id="-21" name="Reset global variables" sid="181077271480844" type="System" />
             </actions>
         </event-block>
         <event-block sid="926464959211036">
@@ -218,6 +219,9 @@
             </conditions>
             <actions>
                 <action id="-9" name="Destroy" sid="896031749912435" type="Sprite" />
+                <action id="-2" name="Go to layout" sid="842096785621588" type="System">
+                    <param id="0" name="Layout">Gameover</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="138882562632702">

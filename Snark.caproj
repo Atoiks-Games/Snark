@@ -10,6 +10,7 @@
     <unique-id>2737z5163mwg7</unique-id>
     <saved-with-version>23300</saved-with-version>
     <used-plugins>
+        <plugin author="Scirra" id="Button" version="1">Button</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
@@ -30,6 +31,7 @@
     </window-size>
     <pixel-rounding>0</pixel-rounding>
     <preview-effects>1</preview-effects>
+    <first-layout>Layout 1</first-layout>
     <use-loader-layout>0</use-loader-layout>
     <configuration-settings>
         <prop name="Clear background">Yes</prop>
@@ -159,13 +161,21 @@
         <object-type name="txtScore" sid="156022451126494">
             <plugin id="Text" />
         </object-type>
+        <object-type name="txtGameover" sid="634414840512870">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="btnRestart" sid="904264816682622">
+            <plugin id="Button" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
         <layout>Layout 1.xml</layout>
+        <layout>Gameover.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>Event sheet 1.xml</event-sheet>
+        <event-sheet>evtGameover.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="0" />

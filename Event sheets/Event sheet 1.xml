@@ -220,5 +220,15 @@
                 <action id="-9" name="Destroy" sid="896031749912435" type="Sprite" />
             </actions>
         </event-block>
+        <event-block sid="138882562632702">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="279719101899323" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="823228086112440" type="txtScore">
+                    <param id="0" name="Text">&quot;Score: &quot; &amp; Score</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>

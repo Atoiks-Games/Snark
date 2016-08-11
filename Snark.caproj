@@ -13,6 +13,7 @@
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
@@ -154,6 +155,9 @@
                     </frame>
                 </animation>
             </animation-folder>
+        </object-type>
+        <object-type name="txtScore" sid="156022451126494">
+            <plugin id="Text" />
         </object-type>
     </object-folder>
     <families />

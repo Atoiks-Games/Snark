@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2project>
-    <name>New project</name>
-    <description></description>
-    <version>1.0.0.0</version>
-    <author></author>
+    <name>Snark</name>
+    <description>A game with sharks and snakes.... Makes me want to snark</description>
+    <version>0.1.0</version>
+    <author>Atoiks Games</author>
     <author-email></author-email>
-    <author-website>http://</author-website>
-    <app-id>com.mycompany.myapp</app-id>
+    <author-website>http://atoiks-games.github.io/</author-website>
+    <app-id>com.atoiks.games.snark</app-id>
     <unique-id>2737z5163mwg7</unique-id>
     <saved-with-version>23300</saved-with-version>
     <used-plugins>
@@ -39,7 +39,7 @@
         <prop name="Loader style">Construct 2 splash</prop>
         <prop name="Orientations">Any</prop>
         <prop name="Pause on unfocus">No</prop>
-        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Physics engine">Box2D web</prop>
         <prop name="Preload sounds">Yes</prop>
         <prop name="Preview browser">(default)</prop>
         <prop name="Sampling">Linear</prop>

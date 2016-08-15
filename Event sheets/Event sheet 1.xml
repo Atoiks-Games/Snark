@@ -234,5 +234,19 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="417232374928530">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="699031087969785" type="System" />
+            </conditions>
+            <actions>
+                <action id="7" name="Play (by name)" sid="862907033835555" type="Audio">
+                    <param id="0" name="Folder">1</param>
+                    <param id="1" name="Audio file name">&quot;Chee_Zee_Jungle&quot;</param>
+                    <param id="3" name="Loop">1</param>
+                    <param id="4" name="Volume">100</param>
+                    <param id="2" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>

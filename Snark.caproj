@@ -10,9 +10,11 @@
     <unique-id>2737z5163mwg7</unique-id>
     <saved-with-version>23300</saved-with-version>
     <used-plugins>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
         <plugin author="Scirra" id="Button" version="1">Button</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
+        <plugin author="Scirra" id="Particles" version="1">Particles</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
     </used-plugins>
@@ -167,6 +169,33 @@
         <object-type name="btnRestart" sid="904264816682622">
             <plugin id="Button" />
         </object-type>
+        <object-type name="Audio" sid="559105853936379">
+            <plugin id="Audio" />
+        </object-type>
+        <object-type name="Sprite3" sid="665611718821693">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="215339995071580" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500368" original-source="C:\Users\ajbim\Downloads\Music\stones-850066_1920.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite4" sid="609949552241600">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="708787375454430" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Particles" sid="861257147602548">
+            <plugin id="Particles" />
+            <texture original-source="C:\Users\ajbim\OneDrive\Documents\GitHub\Snark\Animations\Sprite2\Default\000.png" />
+        </object-type>
+        <object-type name="Particles2" sid="560298147814579">
+            <plugin id="Particles" />
+            <texture original-source="C:\Users\ajbim\OneDrive\Documents\GitHub\Epic-Battles\Animations\Laser\Default\000.png" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -181,9 +210,26 @@
     <global-instances>
         <global-instance type="Keyboard" uid="0" />
         <global-instance type="Mouse" uid="1" />
+        <global-instance type="Audio" uid="19">
+            <properties>
+                <timescale-audio>Off</timescale-audio>
+                <saveload>All</saveload>
+                <play-in-background>Yes</play-in-background>
+                <positioned-audio></positioned-audio>
+                <panning-model>HRTF</panning-model>
+                <distance-model>Inverse</distance-model>
+                <listener-z-height>600</listener-z-height>
+                <reference-distance>600</reference-distance>
+                <maximum-distance>10000</maximum-distance>
+                <roll-off-factor>1</roll-off-factor>
+            </properties>
+        </global-instance>
     </global-instances>
     <sounds-folder />
-    <music-folder />
+    <music-folder>
+        <file name="Chee_Zee_Jungle.m4a" />
+        <file name="Chee_Zee_Jungle.ogg" />
+    </music-folder>
     <files-folder>
         <file-folder name="Icons">
             <file name="icon-16.png" />

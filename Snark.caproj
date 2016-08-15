@@ -170,6 +170,7 @@
     </object-folder>
     <families />
     <layout-folder>
+        <layout>Start.xml</layout>
         <layout>Layout 1.xml</layout>
         <layout>Gameover.xml</layout>
     </layout-folder>

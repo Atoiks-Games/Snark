@@ -13,5 +13,15 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="113974218606113">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="150781727382716" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="946844740042537" type="txtScore">
+                    <param id="0" name="Text">&quot;Score: &quot; &amp; Score</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>

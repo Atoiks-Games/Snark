@@ -3,8 +3,12 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Event sheet 1</name>
     <events>
+        <variable constant="0" name="Level" sid="943502103555385" static="0" type="number">0</variable>
         <variable constant="0" name="Score" sid="316417501885256" static="0" type="number">0</variable>
-        <variable constant="0" name="Difficulty" sid="575757480673136" static="0" type="number">10</variable>
+        <variable constant="0" name="ShotsFired" sid="168052908223601" static="0" type="number">0</variable>
+        <variable constant="0" name="Speed" sid="461210884563629" static="0" type="number">1</variable>
+        <variable constant="0" name="Kills" sid="920811190571933" static="0" type="number">0</variable>
+        <variable constant="0" name="CloudPacing" sid="575757480673136" static="0" type="number">10</variable>
         <event-block sid="435141016102089">
             <conditions>
                 <condition id="-2" name="On start of layout" sid="765113694515078" type="System" />
@@ -126,16 +130,34 @@
                     <param id="1" name="Layer">0</param>
                     <param id="2" name="Image point">0</param>
                 </action>
+                <action id="-16" name="Wait" sid="103288052317047" type="System">
+                    <param id="0" name="Seconds">0.1</param>
+                </action>
+                <action id="-9" name="Destroy" sid="282786180171239" type="LAzer" />
+                <action id="-10" name="Add to" sid="260344428535168" type="System">
+                    <param id="0" name="Variable">ShotsFired</param>
+                    <param id="1" name="Value">1</param>
+                </action>
             </actions>
         </event-block>
-        <event-block sid="224994384001069">
+        <event-block sid="774007331420729">
             <conditions>
-                <condition id="3" name="On button released" sid="419560812460407" type="Mouse">
-                    <param id="0" name="Mouse button">2</param>
+                <condition id="-14" name="Compare variable" sid="782239260140368" type="System">
+                    <param id="0" name="Variable">Level</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Value">50</param>
                 </condition>
+                <condition id="-4" name="Trigger once while true" sid="548334899354921" type="System" />
             </conditions>
             <actions>
-                <action id="-9" name="Destroy" sid="282786180171239" type="LAzer" />
+                <action id="-10" name="Add to" sid="579427105512644" type="System">
+                    <param id="0" name="Variable">Speed</param>
+                    <param id="1" name="Value">2</param>
+                </action>
+                <action id="-11" name="Subtract from" sid="181127743854050" type="System">
+                    <param id="0" name="Variable">CloudPacing</param>
+                    <param id="1" name="Value">0.1</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="393335874123082">
@@ -144,22 +166,17 @@
                     <param id="0" name="Interval (seconds)">1.5</param>
                 </condition>
                 <condition id="-14" name="Compare variable" sid="848576077586393" type="System">
-                    <param id="0" name="Variable">Difficulty</param>
+                    <param id="0" name="Variable">CloudPacing</param>
                     <param id="1" name="Comparison">4</param>
-                    <param id="2" name="Value">0.1</param>
+                    <param id="2" name="Value">1</param>
                 </condition>
             </conditions>
-            <actions>
-                <action id="-11" name="Subtract from" sid="181127743854050" type="System">
-                    <param id="0" name="Variable">Difficulty</param>
-                    <param id="1" name="Value">0.1</param>
-                </action>
-            </actions>
+            <actions />
         </event-block>
         <event-block sid="715388457843485">
             <conditions>
                 <condition id="-6" name="Every X seconds" sid="331851503333636" type="System">
-                    <param id="0" name="Interval (seconds)">Difficulty</param>
+                    <param id="0" name="Interval (seconds)">CloudPacing</param>
                 </condition>
             </conditions>
             <actions>
@@ -180,13 +197,13 @@
                     <param id="1" name="Y">Sprite.Y</param>
                 </action>
                 <action behavior="Bullet" id="0" name="Set speed" sid="104735742784483" type="Sprite2">
-                    <param id="0" name="Speed">11 - Difficulty</param>
+                    <param id="0" name="Speed">Speed</param>
                 </action>
             </actions>
         </event-block>
         <event-block sid="623003177782645">
             <conditions>
-                <condition id="0" name="On collision with another object" sid="424544096101392" type="LAzer">
+                <condition id="0" name="On collision with another object" sid="603370746831971" type="LAzer">
                     <param id="0" name="Object">Sprite2</param>
                 </condition>
             </conditions>
@@ -206,7 +223,7 @@
             <actions>
                 <action id="-9" name="Destroy" sid="682828624695937" type="Sprite2" />
                 <action id="-10" name="Add to" sid="733730016586789" type="System">
-                    <param id="0" name="Variable">Score</param>
+                    <param id="0" name="Variable">Kills</param>
                     <param id="1" name="Value">1</param>
                 </action>
             </actions>
@@ -232,6 +249,14 @@
                 <action id="0" name="Set text" sid="823228086112440" type="txtScore">
                     <param id="0" name="Text">&quot;Score: &quot; &amp; Score</param>
                 </action>
+                <action id="-9" name="Set value" sid="489014648021571" type="System">
+                    <param id="0" name="Variable">Score</param>
+                    <param id="1" name="Value">Kills*15-ShotsFired</param>
+                </action>
+                <action id="-9" name="Set value" sid="986156262287799" type="System">
+                    <param id="0" name="Variable">Level</param>
+                    <param id="1" name="Value">Score%100</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="417232374928530">
@@ -246,6 +271,14 @@
                     <param id="4" name="Volume">100</param>
                     <param id="2" name="Tag (optional)">&quot;&quot;</param>
                 </action>
+            </actions>
+        </event-block>
+        <event-block sid="179546905077428">
+            <conditions>
+                <condition id="-3" inverted="1" name="Is on-screen" sid="790327947359178" type="Sprite2" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="565487030672148" type="Sprite2" />
             </actions>
         </event-block>
     </events>

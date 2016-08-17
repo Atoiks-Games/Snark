@@ -17,6 +17,7 @@
         <plugin author="Scirra" id="Particles" version="1">Particles</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="TextBox" version="1">Text box</plugin>
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
@@ -195,6 +196,12 @@
         <object-type name="Particles2" sid="560298147814579">
             <plugin id="Particles" />
             <texture original-source="C:\Users\ajbim\OneDrive\Documents\GitHub\Epic-Battles\Animations\Laser\Default\000.png" />
+        </object-type>
+        <object-type name="TextBox" sid="199782727661075">
+            <plugin id="TextBox" />
+        </object-type>
+        <object-type name="TextBox2" sid="798806933565583">
+            <plugin id="TextBox" />
         </object-type>
     </object-folder>
     <families />

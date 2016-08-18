@@ -160,19 +160,6 @@
                 </action>
             </actions>
         </event-block>
-        <event-block sid="393335874123082">
-            <conditions>
-                <condition id="-6" name="Every X seconds" sid="185665521460576" type="System">
-                    <param id="0" name="Interval (seconds)">1.5</param>
-                </condition>
-                <condition id="-14" name="Compare variable" sid="848576077586393" type="System">
-                    <param id="0" name="Variable">CloudPacing</param>
-                    <param id="1" name="Comparison">4</param>
-                    <param id="2" name="Value">1</param>
-                </condition>
-            </conditions>
-            <actions />
-        </event-block>
         <event-block sid="715388457843485">
             <conditions>
                 <condition id="-6" name="Every X seconds" sid="331851503333636" type="System">
@@ -192,6 +179,9 @@
                 <condition id="-18" name="On created" sid="268776388330636" type="Sprite2" />
             </conditions>
             <actions>
+                <action behavior="Bullet" id="5" name="Set enabled" sid="811090717129860" type="Sprite2">
+                    <param id="0" name="State">1</param>
+                </action>
                 <action id="-22" name="Set angle toward position" sid="665290217608683" type="Sprite2">
                     <param id="0" name="X">Sprite.X</param>
                     <param id="1" name="Y">Sprite.Y</param>

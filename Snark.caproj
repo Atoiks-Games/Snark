@@ -34,7 +34,7 @@
     </window-size>
     <pixel-rounding>0</pixel-rounding>
     <preview-effects>1</preview-effects>
-    <first-layout>Layout 1</first-layout>
+    <first-layout>Start</first-layout>
     <use-loader-layout>0</use-loader-layout>
     <configuration-settings>
         <prop name="Clear background">Yes</prop>
@@ -202,6 +202,18 @@
         </object-type>
         <object-type name="TextBox2" sid="798806933565583">
             <plugin id="TextBox" />
+        </object-type>
+        <object-type name="TextBox3" sid="629995592614103">
+            <plugin id="TextBox" />
+        </object-type>
+        <object-type name="Text" sid="614072873271448">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Text2" sid="886010121848198">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Text3" sid="929636933353325">
+            <plugin id="Text" />
         </object-type>
     </object-folder>
     <families />
